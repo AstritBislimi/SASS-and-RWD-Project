@@ -1,0 +1,485 @@
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  margin-top: 3px;
+  width: 20px;
+  background-color: #060606;
+  display: block;
+  transition: 0.3s ease-in;
+}
+
+.nav-container {
+  @include regularFlex(20px);
+  padding: 15px 2.5vw;
+  min-height: 80px;
+
+  .logo {
+    @include logoStyle(30px);
+  }
+  .nav-ul {
+    @include regularFlex(50px);
+  }
+  // .nav-li:nth-child(1) {
+  //   background-color: #d9d9d9;
+  //   padding: 10px;
+  //   border-radius: 10px;
+  // }
+  // .nav-li:nth-child(1) .nav-link {
+  //   @include NavLinkStyle($home-link-color, 18px);
+  // }
+  .nav-link {
+    @include NavLinkStyle($main-color, 18px);
+    vertical-align: middle;
+  }
+  .nav-li:not(:last-child) {
+    padding: 10px;
+    &:hover {
+      background-color: #d9d9d9;
+
+      border-radius: 10px;
+    }
+  }
+  .nav-li i {
+    margin-right: 10px;
+    color: $main-color;
+  }
+  .admin-identity {
+    @include regularFlex(10px);
+    img {
+      width: 30%;
+    }
+    i {
+      font-size: 25px;
+    }
+  }
+  .admin-name {
+    @include regText($main-color, 20px, 700, auto);
+  }
+  .auth {
+    @include regText($main-color, 18px, 400, auto);
+    padding-top: 8px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: white;
+    .nav-ul {
+      position: fixed;
+      left: 100%;
+      flex-direction: column;
+      width: 100%;
+      height: 50vh;
+      transition: 0.3s ease-in;
+      top: 80px;
+      text-align: left;
+      padding: 5vh 10vw;
+      gap: 10px;
+      background-color: white;
+      border-top: 1px solid #d9d9d9;
+    }
+    .nav-li {
+      width: 100%;
+      background-color: transparent !important;
+      padding: 0 !important;
+    }
+    .nav-ul.active {
+      left: 0;
+    }
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .admin-identity {
+    width: 100%;
+    @include CustomFlex(flex-start, center, row);
+    img {
+      width: 70px !important;
+      height: 70px;
+    }
+    i {
+      order: 99;
+      flex-grow: 1;
+      text-align: right;
+      font-size: 20px;
+    }
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/////main customizing
+
+.main {
+  background-color: #f3f4f7;
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.container90 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.heading {
+  .mainH1 {
+    @include regText($main-color, 20px, 700, auto);
+  }
+  .wellcomeP {
+    @include regText($main-color, 20px, 400, auto);
+  }
+  .row {
+    @include CustomFlex(space-between, flex-start, column);
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .headingBox {
+    @include regBox;
+  }
+  .user-info {
+    @include CustomFlex(flex-start, center, row);
+    gap: 10px;
+    .userName {
+      @include regText($main-color, 20px, 700, auto);
+      margin-bottom: 5px;
+    }
+    img {
+      border-radius: 15px;
+      width: 20%;
+    }
+    i {
+      color: $black;
+      align-self: flex-start;
+      margin-top: 3vh;
+    }
+  }
+}
+.secondRow {
+  @include CustomFlex(flex-start, center, row);
+  gap: 10px;
+  margin: 30px 0;
+  .user-email {
+    @include regText($light-text-color, 14px, 400, auto);
+    &::before {
+      content: "\f0e0";
+      font-family: "Font Awesome 5 Free";
+      font: var(--fa-font-solid);
+      color: $light-text-color;
+      margin-right: 5px;
+      font-size: 18px;
+      vertical-align: middle;
+    }
+  }
+  .user-phone {
+    @extend .user-email;
+    &::before {
+      content: "\f095";
+    }
+  }
+}
+
+.thirdRow {
+  border-top: 1px solid #aaaaaa;
+  padding: 20px 0 0 0;
+  @extend .secondRow;
+  flex-direction: column;
+  margin: 30px 0 20px 0;
+
+  .percentage-flex {
+    @include regularFlex(10px);
+  }
+  .percentage-desc {
+    @include regText($percentage-color, 16px, 700, auto);
+  }
+  .percentage {
+    @extend .percentage-desc;
+    font-weight: 400;
+  }
+
+  .col-6:nth-of-type(2) {
+    margin-top: 20px;
+    .percentage-active {
+      background-color: $progress-orange;
+    }
+  }
+}
+.TaskCol {
+  @include regularFlex(10px);
+  flex-direction: column;
+}
+.TaskStatusBox {
+  @include CustomFlex(flex-start, center, row);
+  gap: 10px;
+  @include regBox;
+  padding: 20px;
+  img {
+    background-color: $green-accent;
+    padding: 10px;
+    width: 65px;
+    border-radius: 7px;
+  }
+  .NrOfTasks {
+    @include regText($main-color, 18px, 700, auto);
+  }
+  .task-completed {
+    @extend .NrOfTasks;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+}
+
+.TaskStatusBox:nth-child(2) {
+  img {
+    background-color: $blue-accent;
+  }
+}
+
+///////this is the stryling for the revenue box
+.headingBox {
+  i {
+    margin-top: 0vh !important;
+  }
+  .UserEarnings {
+    @include regText($main-color, 40px, 700, auto);
+    margin: 20px 0 15px 0;
+  }
+  .timeFrame {
+    @include regText($main-color, 20px, 400, auto);
+  }
+  .user-statistics {
+    padding-top: 20px;
+    margin-top: 7.5vh;
+    border-top: 1px solid #aaaaaa;
+    @include regularFlex(20px);
+  }
+  .user-statistics-prev {
+    @include regularFlex(10px);
+  }
+  .prev-stats-percentage {
+    @include regText($percentage-color, 14px, 700, auto);
+    margin-bottom: 5px;
+  }
+  .prev-stats {
+    @include regText($light-text-color, 18px, 300, auto);
+  }
+}
+
+.projects-section {
+  margin-top: 50px;
+
+  .row {
+    @include regularFlex(auto);
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.projectsBox {
+  @include CustomFlex(flex-start, flex-start, column);
+  @include regBox;
+  gap: 20px;
+  .project-date {
+    @include regularFlex(0);
+    .date {
+      @include regText($light-text-color, 14px, 600, auto);
+    }
+    i {
+      color: $light-text-color;
+    }
+  }
+  .ProjectName {
+    @include regText($main-color, 14px, 600, auto);
+  }
+  .task-status {
+    @include TaskStatus($color-span-blue, $color-span-blue-accent);
+  }
+  .task-description {
+    @include regText($light-text-color, 16px, 400, auto);
+  }
+  .percentage-flex {
+    @include regularFlex(10px);
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  .percentage-desc {
+    @include regText($percentage-color, 16px, 700, auto);
+  }
+  .percentage {
+    @extend .percentage-desc;
+    font-weight: 400;
+  }
+  .percentage-active {
+    background-color: $progress-green;
+    width: 75%;
+  }
+  .people-project {
+    @include regularFlex(0);
+    position: relative;
+    img {
+      display: block;
+    }
+    img:nth-child(2) {
+      position: absolute;
+      right: -68%;
+    }
+  }
+}
+
+.projectsBox:nth-child(2) {
+  .percentage-active {
+    background-color: $progress-red;
+  }
+  .task-status {
+    color: $progress-red;
+    background-color: $progress-red-accent;
+  }
+  .percentage-active {
+    width: 50%;
+  }
+}
+.projectsBox:nth-child(3) {
+  .percentage-active {
+    background-color: $progress-green;
+  }
+  .task-status {
+    color: $progress-green;
+    background-color: $progress-green-accent;
+  }
+  .percentage-active {
+    width: 50%;
+  }
+}
+
+.tasks {
+  margin-top: 50px;
+}
+.taskBoxContainer {
+  @include CustomFlex(flex-start, flex-start, column);
+  gap: 20px;
+}
+
+.taskBox {
+  @include regBox;
+  @include CustomFlex(flex-start, flex-start, column);
+  gap: 20px;
+  .checkbox {
+    @include regText($main-color, 17px, 400, auto);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked + span {
+        background-color: blue;
+      }
+    }
+    span {
+      height: 25px;
+      width: 25px;
+      border-radius: 3px;
+      cursor: pointer;
+      border: 1px black solid;
+    }
+  }
+  .task-data {
+    @include CustomFlex(flex-start, center, row);
+    gap: 10px;
+    .deadline {
+      color: $priority-pink;
+      background-color: $priority-pink-accent;
+      margin-left: 10px;
+    }
+  }
+}
+
+.deadline {
+  @include regText($deadline-blue, 13px, 400, auto);
+  background-color: $color-span-blue-accent;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.taskBox:nth-child(2),
+.taskBox:nth-child(3) {
+  .task-data {
+    .deadline {
+      color: $priority-medium;
+      background-color: $priority-medium-accent;
+    }
+  }
+}
+.taskBox:nth-child(4) {
+  .task-data {
+    .deadline {
+      color: $green-main;
+      background-color: $green-accent;
+    }
+  }
+}
+
+.taskBox:nth-child(3),
+.taskBox:nth-child(4) {
+  .deadline {
+    color: $main-color;
+    background-color: $main-accent;
+  }
+}
+
+.button-container {
+  @include CustomFlex(center, center, row);
+  .load-more-button {
+    border: 1px solid #0055ff;
+    background-color: transparent;
+    color: #0055ff;
+    padding: 15px 40px;
+    @include regText(#0055ff, 20px, 700, auto);
+    border-radius: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  padding: 60px 2.5vw;
+  @include CustomFlex(flex-start, center, column);
+  gap: 20px;
+
+  .footer-ul {
+    @include CustomFlex(flex-start, center, row);
+    gap: 10px;
+    flex-wrap: wrap;
+    .footer-li {
+      a {
+        text-decoration: none;
+        @include regText($main-color, 18px, 400, auto);
+      }
+    }
+  }
+  .rights-p {
+    @include regText($main-color, 18px, 400, auto);
+  }
+}

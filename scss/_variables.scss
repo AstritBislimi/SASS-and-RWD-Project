@@ -1,0 +1,87 @@
+$main-color: #434141;
+$logo-color: #1e2c48;
+$home-link-color: #171616;
+$light-text-color: #aaaaaa;
+$progress-blue: #0055ff;
+$percentage-color: #353b41;
+$progress-bar-leftover-color: #aaaaaa;
+$progress-orange: #ff794d;
+$progress-green:#3DD178;
+$progress-green-accent:#E7F9EF;
+$green-main: #5eec9d;
+$green-accent: #e7f9ef;
+$black: black;
+$blue-accent: #e3f4f7;
+$view-color: #1c1a73;
+$color-span-blue: #057b96;
+$color-span-blue-accent: #e0eaff;
+$progress-red: #E31B27;
+$progress-red-accent: #E0CCCD;
+$deadline-blue:#17A4C4;
+$priority-pink:#F085C1;
+$priority-pink-accent:#FDE6E7;
+$priority-medium:#E34444;
+$priority-medium-accent:#E89393;
+$main-accent:#E9EAEA;
+
+@mixin CustomFlex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin regularFlex($gap) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $gap;
+}
+
+@mixin logoStyle($font-size) {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  color: $logo-color;
+}
+
+@mixin NavLinkStyle($color, $font-size) {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size;
+  color: $main-color;
+}
+
+@mixin regText($color, $font-size, $font-weight, $line-height) {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+  line-height: $line-height;
+}
+
+@mixin regBox {
+  border: 1px solid $main-color;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+@mixin TaskStatus($textColor, $bckColor) {
+    display: block;
+    color: $textColor;
+    background-color: $bckColor;
+    padding: 5px 7px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+  
+}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: 8.33333333% * $i;
+  }
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav-container">
+      <a href="" class="logo">Dashboard</a>
+
+      <ul class="nav-ul">
+        <li class="nav-li">
+          <i class="fa fa-light fa-border-all"></i
+          ><a href="" class="nav-link">Home</a>
+        </li>
+        <li class="nav-li">
+          <i class="fa fa-solid fa-folder"></i
+          ><a href="" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-li">
+          <i class="fa fa-solid fa-list"></i
+          ><a href="" class="nav-link">Tasks</a>
+        </li>
+        <li class="nav-li">
+          <i class="fa fa-solid fa-signal"></i
+          ><a href="" class="nav-link">Reports</a>
+        </li>
+        <li class="nav-li">
+          <i class="fa fa-solid fa-gear"></i
+          ><a href="" class="nav-link">Settings</a>
+        </li>
+        <li class="nav-li">
+          <div class="admin-identity">
+            <i class="fa fa-solid fa-bell"></i>
+            <img src="/images/avatar-1 2.svg" />
+            <div>
+              <p class="admin-name">Elizabeth F</p>
+              <p class="auth">Admin</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="hamburger" onclick="mobileMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="container90">
+        <section class="heading col-12">
+          <h1 class="mainH1">Hi Elizabeth</h1>
+          <p class="wellcomeP">Welcome to dashboard</p>
+          <!-- the sstart of the forst section I used a 5 2 5 col flex -->
+          <div class="row col-12">
+            <!-- first col -->
+            <article class="headingBox col-5">
+              <div class="col-12 user-info">
+                <img src="/images/avatar-1 2.svg" alt="" />
+                <div class="col-12">
+                  <h2 class="userName">Elizabeth Foster</h2>
+                  <p class="UserProfession">Web & Graphic Designer</p>
+                </div>
+                <i class="fa fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="col-12 secondRow">
+                <h2 class="user-email">xyz@mail.com</h2>
+                <h2 class="user-phone">+00 123-456-789</h2>
+              </div>
+              <div class="thirdRow col-12">
+                <div class="col-6">
+                  <div class="percentage-flex col-12">
+                    <p class="percentage-desc">Project Completion</p>
+                    <p class="percentage">85%</p>
+                  </div>
+                  <div class="col-12 percentage-inactive">
+                    <div class="percentage-active"></div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="percentage-flex col-12">
+                    <p class="percentage-desc">Overall Rating</p>
+                    <p class="percentage">7.5</p>
+                  </div>
+                  <div class="col-12 percentage-inactive">
+                    <div class="percentage-active"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- second col -->
+            <article class="col-2 TaskCol">
+              <div class="col-12 TaskStatusBox">
+                <img src="/images/check-circle.svg" alt="" />
+                <div>
+                  <p class="NrOfTasks">21</p>
+                  <p class="task-completed">Tasks Completed</p>
+                </div>
+              </div>
+              <div class="col-12 TaskStatusBox">
+                <img src="/images/Group 27.svg" alt="" />
+                <div>
+                  <p class="NrOfTasks">21</p>
+                  <p class="task-completed">Tasks In Progress</p>
+                </div>
+              </div>
+            </article>
+            <!-- the third col -->
+            <article class="headingBox col-5">
+              <div class="col-12 user-info">
+                <div class="col-12">
+                  <h2 class="userName">Revenue</h2>
+                  <p class="UserEarnings">$2,100</p>
+                  <p class="timeFrame">Last Week</p>
+                </div>
+                <i class="fa fa-solid fa-ellipsis"></i>
+              </div>
+              <div class="user-statistics">
+                <div class="user-statistics-prev">
+                  <img src="/images/Group 23.svg" alt="" />
+                  <div>
+                    <p class="prev-stats-percentage">15%</p>
+                    <p class="prev-stats">Prev Week</p>
+                  </div>
+                </div>
+                <div class="user-statistics-prev">
+                  <img src="/images/Group 22.svg" alt="" />
+                  <div>
+                    <p class="prev-stats-percentage">10%</p>
+                    <p class="prev-stats">Prev Month</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- this is the second section -->
+        <section class="projects-section">
+          <div class="section-header">
+            <h2 class="SectionH2">Recent Projects</h2>
+            <a href="" class="SectionLink">View All</a>
+          </div>
+          <div class="row">
+            <article class="projectsBox col-4">
+              <div class="project-date col-12">
+                <p class="date">Apr 09, 2022</p>
+                <i class="fa fa-solid fa-ellipsis"></i>
+              </div>
+              <div>
+                <p class="ProjectName">Shreyu - Design Updates</p>
+              </div>
+              <span class="task-status">Designing</span>
+              <p class="task-description">
+                Update shreyu with modern and latest trends...
+              </p>
+              <div class="percentage-flex col-12">
+                <p class="percentage-desc">Progress</p>
+                <p class="percentage">75%</p>
+              </div>
+              <div class="col-12 percentage-inactive">
+                <div class="percentage-active"></div>
+              </div>
+              <div class="people-project">
+                <img src="/images/avatar-2.png" alt="" />
+                <img src="/images/avatar-1.png" alt="" />
+              </div>
+            </article>
+            <article class="projectsBox col-4">
+              <div class="project-date col-12">
+                <p class="date">Apr 09, 2022</p>
+                <i class="fa fa-solid fa-ellipsis"></i>
+              </div>
+              <div>
+                <p class="ProjectName">Shreyu - Design Updates</p>
+              </div>
+              <span class="task-status">Designing</span>
+              <p class="task-description">
+                Update shreyu with modern and latest trends...
+              </p>
+              <div class="percentage-flex col-12">
+                <p class="percentage-desc">Progress</p>
+                <p class="percentage">50%</p>
+              </div>
+              <div class="col-12 percentage-inactive">
+                <div class="percentage-active"></div>
+              </div>
+              <div class="people-project">
+                <img src="/images/avatar-2.png" alt="" />
+                <img src="/images/avatar-1.png" alt="" />
+              </div>
+            </article>
+            <article class="projectsBox col-4">
+              <div class="project-date col-12">
+                <p class="date">Apr 09, 2022</p>
+                <i class="fa fa-solid fa-ellipsis"></i>
+              </div>
+              <div>
+                <p class="ProjectName">Shreyu - Design Updates</p>
+              </div>
+              <span class="task-status">Designing</span>
+              <p class="task-description">
+                Update shreyu with modern and latest trends...
+              </p>
+              <div class="percentage-flex col-12">
+                <p class="percentage-desc">Progress</p>
+                <p class="percentage">50%</p>
+              </div>
+              <div class="col-12 percentage-inactive">
+                <div class="percentage-active"></div>
+              </div>
+              <div class="people-project">
+                <img src="/images/avatar-2.png" alt="" />
+                <img src="/images/avatar-1.png" alt="" />
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- this is the tasks section -->
+        <section class="tasks">
+          <div class="section-header">
+            <h2 class="SectionH2">Tasks</h2>
+            <a href="" class="SectionLink">View All</a>
+          </div>
+          <!-- first task -->
+          <div class="taskBoxContainer">
+            <article class="taskBox col-12">
+              <div class="col-4">
+                <label for="checkbox" class="checkbox">
+                  <input type="checkbox" id="checkbox" name="checkbox" />
+                  <span></span>
+                  Draft the new contract document for sales team
+                </label>
+              </div>
+              <span class="deadline"> Today 10pm </span>
+              <div class="task-data col-3">
+                <p class="data"><i class="fa fa-solid fa-list"></i> 3/7</p>
+                <p class="data"><i class="fa fa-regular fa-message"></i> 21</p>
+                <span class="deadline">High</span>
+              </div>
+            </article>
+            <!-- second task -->
+            <article class="taskBox col-12">
+              <div class="col-4">
+                <label for="checkbox2" class="checkbox">
+                  <input type="checkbox" id="checkbox2" name="checkbox2" />
+                  <span></span>
+                  iOS App home page design
+                </label>
+              </div>
+              <span class="deadline"> Today 5pm </span>
+              <div class="task-data col-3">
+                <p class="data"><i class="fa fa-solid fa-list"></i> 10/11</p>
+                <p class="data"><i class="fa fa-regular fa-message"></i> 5</p>
+                <span class="deadline">Medium</span>
+              </div>
+            </article>
+            <!-- the third task -->
+            <article class="taskBox col-12">
+              <div class="col-4">
+                <label for="checkbox3" class="checkbox">
+                  <input type="checkbox" id="checkbox3" name="checkbox3" />
+                  <span></span>
+                  Enable analytics tracking
+                </label>
+              </div>
+              <span class="deadline"> Tomorrow 5pm </span>
+              <div class="task-data col-3">
+                <p class="data"><i class="fa fa-solid fa-list"></i> 5/11</p>
+                <p class="data"><i class="fa fa-regular fa-message"></i> 7</p>
+                <span class="deadline">Medium</span>
+              </div>
+            </article>
+            <!-- this is the forth -->
+            <article class="taskBox col-12">
+              <div class="col-4">
+                <label for="checkbox4" class="checkbox">
+                  <input type="checkbox" id="checkbox4" name="checkbox4" />
+                  <span></span>
+                  Kanban board design
+                </label>
+              </div>
+              <span class="deadline"> Sep 11, 3pm </span>
+              <div class="task-data col-3">
+                <p class="data"><i class="fa fa-solid fa-list"></i> 0/5</p>
+                <p class="data"><i class="fa fa-regular fa-message"></i> 3</p>
+                <span class="deadline">Low</span>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 button-container">
+            <button class="load-more-button">Load More</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <ul class="footer-ul col-7">
+        <li class="footer-li"><a href="">About</a></li>
+        <li class="footer-li">-</li>
+        <li class="footer-li"><a href="">Privacy</a></li>
+        <li class="footer-li">-</li>
+        <li class="footer-li"><a href="">Terms</a></li>
+        <li class="footer-li">-</li>
+        <li class="footer-li"><a href="">Developers</a></li>
+        <li class="footer-li">-</li>
+        <li class="footer-li"><a href="">Support</a></li>
+        <li class="footer-li">-</li>
+        <li class="footer-li"><a href="">Careers</a></li>
+      </ul>
+      <p class="rights-p col-5">All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
+<script
+  src="https://kit.fontawesome.com/0b1f61329b.js"
+  crossorigin="anonymous"
+></script>
+<script src="/script.js"></script>

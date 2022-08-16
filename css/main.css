@@ -1,0 +1,1149 @@
+.col-1 {
+  width: 8.33333333%;
+}
+
+.col-2 {
+  width: 16.66666666%;
+}
+
+.col-3 {
+  width: 24.99999999%;
+}
+
+.col-4 {
+  width: 33.33333332%;
+}
+
+.col-5 {
+  width: 41.66666665%;
+}
+
+.col-6 {
+  width: 49.99999998%;
+}
+
+.col-7 {
+  width: 58.33333331%;
+}
+
+.col-8 {
+  width: 66.66666664%;
+}
+
+.col-9 {
+  width: 74.99999997%;
+}
+
+.col-10 {
+  width: 83.3333333%;
+}
+
+.col-11 {
+  width: 91.66666663%;
+}
+
+.col-12 {
+  width: 99.99999996%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0; /* 1 */
+  padding: 0;
+  white-space: normal; /* 2 */
+  *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+  vertical-align: baseline; /* 3 */
+  *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  *overflow: visible; /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  *height: 13px; /* 3 */
+  *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.percentage-inactive {
+  background-color: #aaaaaa;
+  height: 7px;
+  border-radius: 7px;
+  margin-top: 4px;
+}
+
+.percentage-active {
+  background-color: #0055ff;
+  width: 85%;
+  height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.section-header {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+.section-header .SectionH2, .section-header .SectionLink {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #434141;
+  line-height: auto;
+}
+
+.SectionLink {
+  color: #1c1a73 !important;
+}
+.SectionLink::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  margin-top: 3px;
+  width: 20px;
+  background-color: #060606;
+  display: block;
+  transition: 0.3s ease-in;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 15px 2.5vw;
+  min-height: 80px;
+}
+.nav-container .logo {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: #1e2c48;
+}
+.nav-container .nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.nav-container .nav-link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #434141;
+  vertical-align: middle;
+}
+.nav-container .nav-li:not(:last-child) {
+  padding: 10px;
+}
+.nav-container .nav-li:not(:last-child):hover {
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+.nav-container .nav-li i {
+  margin-right: 10px;
+  color: #434141;
+}
+.nav-container .admin-identity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.nav-container .admin-identity img {
+  width: 30%;
+}
+.nav-container .admin-identity i {
+  font-size: 25px;
+}
+.nav-container .admin-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #434141;
+  line-height: auto;
+}
+.nav-container .auth {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #434141;
+  line-height: auto;
+  padding-top: 8px;
+}
+
+@media (max-width: 1023px) {
+  .hamburger {
+    display: block;
+  }
+  .nav-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: white;
+  }
+  .nav-container .nav-ul {
+    position: fixed;
+    left: 100%;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    transition: 0.3s ease-in;
+    top: 80px;
+    text-align: left;
+    padding: 5vh 10vw;
+    gap: 10px;
+    background-color: white;
+    border-top: 1px solid #d9d9d9;
+  }
+  .nav-container .nav-li {
+    width: 100%;
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+  .nav-container .nav-ul.active {
+    left: 0;
+  }
+  .nav-container .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-container .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .admin-identity {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  }
+  .admin-identity img {
+    width: 70px !important;
+    height: 70px;
+  }
+  .admin-identity i {
+    order: 99;
+    flex-grow: 1;
+    text-align: right;
+    font-size: 20px;
+  }
+  [class*=col-] {
+    width: 100%;
+  }
+}
+.main {
+  background-color: #f3f4f7;
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.container90 {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.heading .mainH1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #434141;
+  line-height: auto;
+}
+.heading .wellcomeP {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #434141;
+  line-height: auto;
+}
+.heading .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.heading .headingBox {
+  border: 1px solid #434141;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.heading .user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.heading .user-info .userName {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #434141;
+  line-height: auto;
+  margin-bottom: 5px;
+}
+.heading .user-info img {
+  border-radius: 15px;
+  width: 20%;
+}
+.heading .user-info i {
+  color: black;
+  align-self: flex-start;
+  margin-top: 3vh;
+}
+
+.secondRow, .thirdRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin: 30px 0;
+}
+.secondRow .user-email, .thirdRow .user-email, .secondRow .user-phone, .thirdRow .user-phone {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #aaaaaa;
+  line-height: auto;
+}
+.secondRow .user-email::before, .thirdRow .user-email::before, .secondRow .user-phone::before, .thirdRow .user-phone::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  font: var(--fa-font-solid);
+  color: #aaaaaa;
+  margin-right: 5px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.secondRow .user-phone::before, .thirdRow .user-phone::before {
+  content: "\f095";
+}
+
+.thirdRow {
+  border-top: 1px solid #aaaaaa;
+  padding: 20px 0 0 0;
+  flex-direction: column;
+  margin: 30px 0 20px 0;
+}
+.thirdRow .percentage-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.thirdRow .percentage-desc, .thirdRow .percentage {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #353b41;
+  line-height: auto;
+}
+.thirdRow .percentage {
+  font-weight: 400;
+}
+.thirdRow .col-6:nth-of-type(2) {
+  margin-top: 20px;
+}
+.thirdRow .col-6:nth-of-type(2) .percentage-active {
+  background-color: #ff794d;
+}
+
+.TaskCol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.TaskStatusBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  border: 1px solid #434141;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+}
+.TaskStatusBox img {
+  background-color: #e7f9ef;
+  padding: 10px;
+  width: 65px;
+  border-radius: 7px;
+}
+.TaskStatusBox .NrOfTasks, .TaskStatusBox .task-completed {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #434141;
+  line-height: auto;
+}
+.TaskStatusBox .task-completed {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.TaskStatusBox:nth-child(2) img {
+  background-color: #e3f4f7;
+}
+
+.headingBox i {
+  margin-top: 0vh !important;
+}
+.headingBox .UserEarnings {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #434141;
+  line-height: auto;
+  margin: 20px 0 15px 0;
+}
+.headingBox .timeFrame {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #434141;
+  line-height: auto;
+}
+.headingBox .user-statistics {
+  padding-top: 20px;
+  margin-top: 7.5vh;
+  border-top: 1px solid #aaaaaa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.headingBox .user-statistics-prev {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.headingBox .prev-stats-percentage {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #353b41;
+  line-height: auto;
+  margin-bottom: 5px;
+}
+.headingBox .prev-stats {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #aaaaaa;
+  line-height: auto;
+}
+
+.projects-section {
+  margin-top: 50px;
+}
+.projects-section .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: auto;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.projectsBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #434141;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  gap: 20px;
+}
+.projectsBox .project-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+.projectsBox .project-date .date {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #aaaaaa;
+  line-height: auto;
+}
+.projectsBox .project-date i {
+  color: #aaaaaa;
+}
+.projectsBox .ProjectName {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #434141;
+  line-height: auto;
+}
+.projectsBox .task-status {
+  display: block;
+  color: #057b96;
+  background-color: #e0eaff;
+  padding: 5px 7px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.projectsBox .task-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #aaaaaa;
+  line-height: auto;
+}
+.projectsBox .percentage-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.projectsBox .percentage-desc, .projectsBox .percentage {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #353b41;
+  line-height: auto;
+}
+.projectsBox .percentage {
+  font-weight: 400;
+}
+.projectsBox .percentage-active {
+  background-color: #3DD178;
+  width: 75%;
+}
+.projectsBox .people-project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  position: relative;
+}
+.projectsBox .people-project img {
+  display: block;
+}
+.projectsBox .people-project img:nth-child(2) {
+  position: absolute;
+  right: -68%;
+}
+
+.projectsBox:nth-child(2) .percentage-active {
+  background-color: #E31B27;
+}
+.projectsBox:nth-child(2) .task-status {
+  color: #E31B27;
+  background-color: #E0CCCD;
+}
+.projectsBox:nth-child(2) .percentage-active {
+  width: 50%;
+}
+
+.projectsBox:nth-child(3) .percentage-active {
+  background-color: #3DD178;
+}
+.projectsBox:nth-child(3) .task-status {
+  color: #3DD178;
+  background-color: #E7F9EF;
+}
+.projectsBox:nth-child(3) .percentage-active {
+  width: 50%;
+}
+
+.tasks {
+  margin-top: 50px;
+}
+
+.taskBoxContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.taskBox {
+  border: 1px solid #434141;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.taskBox .checkbox {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #434141;
+  line-height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.taskBox .checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.taskBox .checkbox input:checked + span {
+  background-color: blue;
+}
+.taskBox .checkbox span {
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1px black solid;
+}
+.taskBox .task-data {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.taskBox .task-data .deadline {
+  color: #F085C1;
+  background-color: #FDE6E7;
+  margin-left: 10px;
+}
+
+.deadline {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #17A4C4;
+  line-height: auto;
+  background-color: #e0eaff;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.taskBox:nth-child(2) .task-data .deadline,
+.taskBox:nth-child(3) .task-data .deadline {
+  color: #E34444;
+  background-color: #E89393;
+}
+
+.taskBox:nth-child(4) .task-data .deadline {
+  color: #5eec9d;
+  background-color: #e7f9ef;
+}
+
+.taskBox:nth-child(3) .deadline,
+.taskBox:nth-child(4) .deadline {
+  color: #434141;
+  background-color: #E9EAEA;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.button-container .load-more-button {
+  border: 1px solid #0055ff;
+  background-color: transparent;
+  color: #0055ff;
+  padding: 15px 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0055ff;
+  line-height: auto;
+  border-radius: 15px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 60px 2.5vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer .footer-ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.footer .footer-ul .footer-li a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #434141;
+  line-height: auto;
+}
+.footer .rights-p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #434141;
+  line-height: auto;
+}
+
+@media (min-width: 1024px) {
+  .heading .row {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .heading .TaskCol {
+    justify-content: center;
+    gap: 70px;
+  }
+  .heading .TaskStatusBox {
+    padding: 10px;
+  }
+  .heading .TaskStatusBox img {
+    width: 50px;
+    height: auto;
+  }
+  .thirdRow {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .thirdRow .col-6:nth-of-type(2) {
+    margin-top: 0px;
+  }
+  .projects-section .row {
+    flex-direction: row;
+  }
+  .headingBox .user-statistics {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  .section-header .SectionH2, .section-header .SectionLink {
+    font-size: 20px;
+  }
+  .taskBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+    flex-direction: row;
+    gap: auto;
+  }
+  .taskBox .task-data {
+    justify-content: flex-end;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .footer .rights-p {
+    text-align: right;
+  }
+}

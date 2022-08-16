@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.percentage-inactive {
+  background-color: $progress-bar-leftover-color;
+  height: 7px;
+  border-radius: 7px;
+  margin-top: 4px;
+}
+.percentage-active {
+  background-color: $progress-blue;
+  width: 85%;
+  height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.section-header {
+  margin-bottom: 30px;
+  @include regularFlex(0);
+  .SectionH2 {
+    @include regText($main-color, 20px, 700, auto);
+  }
+}
+.SectionLink {
+  @extend .SectionH2;
+  color: $view-color !important;
+  &::after {
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+}
+
+

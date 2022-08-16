@@ -1,0 +1,57 @@
+@media (min-width: 1024px) {
+  .heading {
+    .row {
+      flex-direction: row;
+      align-items: stretch;
+    }
+    .TaskCol {
+      justify-content: center;
+      gap: 70px;
+    }
+    .TaskStatusBox {
+      padding: 10px;
+
+      img {
+        width: 50px;
+        height: auto;
+      }
+    }
+  }
+  .thirdRow {
+    flex-direction: row;
+    gap: 100px;
+    .col-6:nth-of-type(2) {
+      margin-top: 0px;
+    }
+  }
+  .projects-section {
+    .row {
+      flex-direction: row;
+    }
+  }
+  .headingBox {
+    .user-statistics {
+      justify-content: flex-start;
+      gap: 50px;
+    }
+  }
+  .section-header {
+    .SectionH2 {
+      font-size: 20px;
+    }
+  }
+  .taskBox {
+    @include regularFlex(0);
+    flex-direction: row;
+    gap: (auto);
+    .task-data {
+      justify-content: flex-end;
+    }
+  }
+  .footer {
+    @include CustomFlex (space-between,center,row);
+    .rights-p {
+      text-align: right;
+    }
+  }
+}
